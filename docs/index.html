@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="./css.css">
+  </head>
+  <body>
+
+    <div class="title campoDePerguntas">
+      <h3>OLÁ!</h3>
+      <h3>SEJA BEM-VINDO(A) AO QUIZ B.A.C.C.A!</h3>
+    </div>
+
+    <header class="campoDePerguntas">
+
+      <div class="div">
+
+        <p class="perguntas">Pergunta 01: Qual a unidade de medida que mede a intensidade do som?</p>
+        <label>a)<input type="radio" name="question1">Frequência</label>
+        <label>b)<input type="radio" name="question1" onclick="validacao()" id="correcta1">Decibel</label>
+        <label>c)<input type="radio" name="question1">Compasso</label>
+        <label>d)<input type="radio" name="question1">Ruído</label>
+        <label>e)<input type="radio" name="question1">Hertz</label>
+
+      </div>
+
+      <div class="div">
+
+        <p class="perguntas">Pergunta 02: Quantos dias, aproximadamente, a Lua demora para dar uma volta à Terra?</p>
+        <label>a)<input type="radio" name="question2" onclick="validacao()" id="correcta2">28 dias</label>
+        <label>b)<input type="radio" name="question2">365 dias</label>
+        <label>c)<input type="radio" name="question2">31 dias</label>
+        <label>d)<input type="radio" name="question2">1 dia</label>
+        <label>e)<input type="radio" name="question2">366 dias</label>
+
+      </div>
+
+      <div class="div">
+
+        <p class="perguntas">Pergunta 03: Em que dia da semana temos a matéria de Desenvolvimento Web Básico?</p>
+        <label>a)<input type="radio" name="question3">Segunda-feira</label>
+        <label>b)<input type="radio" name="question3">Terça-feira</label>
+        <label>c)<input type="radio" name="question3" onclick="validacao()" id="correcta3">quarta-feira</label>
+        <label>d)<input type="radio" name="question3">Quinta-feira</label>
+        <label>e)<input type="radio" name="question3">Sexta-feira</label>
+
+      </div>
+
+      <div class="div">
+
+        <p class="perguntas">Pergunta 04: Qual o nome da professora de Desenvolvimento Web Básico?</p>
+        <label>a)<input type="radio" name="question4">Fernanda Hembecker</label>
+        <label>b)<input type="radio" name="question4">Arileide Cristina Alvez</label>
+        <label>c)<input type="radio" name="question4" onclick="validacao()" id="correcta4">Juliana Silva</label>
+        <label>d)<input type="radio" name="question4">Carol Mendes</label>
+        <label>e)<input type="radio" name="question4">Malgarete Rodrigues</label>
+
+      </div>
+
+      <div class="div">
+
+        <p class="perguntas">Pergunta 05: Em que cidade do Paraná a professora Juliana mora?</p>
+        <label>a)<input type="radio" name="question5" onclick="validacao()" id="correcta5">Londrina</label>
+        <label>b)<input type="radio" name="question5">Curitiba</label>
+        <label>c)<input type="radio" name="question5">Ponta Grossa</label>
+        <label>d)<input type="radio" name="question5">Maringá</label>
+        <label>e)<input type="radio" name="question5">Cascavel</label>
+
+      </div>
+
+      <button class="FINALIZAR" onclick="resultado()" type="button" name="button">FINALIZAR</button>
+
+      <div class="div">
+
+        <p id="resultado">...</p>
+
+      </div>
+
+      <input class="FINALIZAR" type="button" value="RECOMEÇAR JOGO" onClick="refreshPage()">
+
+    </header>
+
+        <script>
+
+          var pontuacao=0;
+
+          function validacao() {
+            pontuacao++;
+          }
+
+          function resultado() {
+
+            document.getElementById("resultado").innerHTML = "Sua pontuação foi de: "+pontuacao+"/5!";
+
+          }
+
+          function refreshPage(){
+
+            window.location.reload();
+
+          }
+
+      </script>
+
+  </body>
+</html>

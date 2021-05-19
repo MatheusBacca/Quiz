@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  display: inline;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+}
+
+.campoDePerguntas {
+  background: #666666;
+  margin: 20px;
+  color: white;
+  padding: 30px;
+  list-style: circle;
+  border-style: solid black;
+  border: solid black;
+}
+
+.div{
+  background: white;
+  color: black;
+  display: block;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: solid;
+}
+
+.perguntas, #resultado {
+  font-weight: bold;
+}
+
+#resultado {
+  text-align: center;
+  font-size: 40px;
+}
+
+label {
+  display: block;
+}
+
+.FINALIZAR {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid;
+  cursor: pointer;
+}

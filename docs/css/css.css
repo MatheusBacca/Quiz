@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+.colunaPergunta {
+  background: white;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 100px;
+  list-style: circle;
+  border-style: solid black;
+}
+
+.div{
+  display: block;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
